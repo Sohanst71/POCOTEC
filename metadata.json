@@ -1,0 +1,6 @@
+{
+  "name": "Pocotec Electricals",
+  "description": "Modern B2B and B2C e-commerce platform for premium electrical equipment, bulbs, ceiling fans, switches, wiring accessories, and circuit breakers in Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

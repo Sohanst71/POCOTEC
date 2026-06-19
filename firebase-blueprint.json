@@ -1,0 +1,82 @@
+{
+  "collections": {
+    "products": {
+      "schema": {
+        "id": "string",
+        "name": "string",
+        "category": "string",
+        "price": "number",
+        "unit": "string",
+        "image": "string",
+        "brand": "string",
+        "specs": "map",
+        "description": "string",
+        "stock": "boolean",
+        "isFeatured": "boolean",
+        "minBulkQty": "number",
+        "bulkPrice": "number"
+      },
+      "documents": [
+        {
+          "id": "prod-l1",
+          "name": "POCOTEC High-Lumen Pro LED Bulb 14W E27",
+          "category": "lights",
+          "price": 380,
+          "unit": "Pcs",
+          "image": "https://images.unsplash.com/photo-1550985616-10810253b84d?q=80&w=600&auto=format&fit=crop",
+          "brand": "POCOTEC",
+          "specs": {
+            "Wattage": "14W (Equivalent to 100W Incandescent)",
+            "Cap Fitting": "E27 Screw Type",
+            "Luminous Flux": "1400 Lumens",
+            "Lifespan": "15,000 Hours",
+            "Color Temp": "6500K Cool Daylight",
+            "Warranty": "2 Years Replacement"
+          },
+          "description": "Energy-saving professional LED bulb imported and labeled by POCOTEC. Exceptional brightness, high efficiency, and custom flicker-free controller boards, ideal for Bangladesh workspace power grids.",
+          "stock": true,
+          "isFeatured": true,
+          "minBulkQty": 50,
+          "bulkPrice": 340
+        }
+      ]
+    },
+    "orders": {
+      "schema": {
+        "id": "string",
+        "clientName": "string",
+        "companyName": "string",
+        "phone": "string",
+        "email": "string",
+        "notes": "string",
+        "items": "array",
+        "status": "string",
+        "createdAt": "string",
+        "totalAmount": "number",
+        "bengaliNotes": "string"
+      },
+      "documents": []
+    },
+    "users": {
+      "schema": {
+        "id": "string",
+        "email": "string",
+        "name": "string",
+        "role": "string",
+        "createdAt": "string"
+      },
+      "documents": []
+    },
+    "contact_queries": {
+      "schema": {
+        "name": "string",
+        "email": "string",
+        "phone": "string",
+        "subject": "string",
+        "message": "string",
+        "createdAt": "string"
+      },
+      "documents": []
+    }
+  }
+}

@@ -1,0 +1,25 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Products configuration
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if true; // In full production, this would be admin-only, but for real-time demo we allow editing
+    }
+    
+    // Orders configuration
+    match /orders/{orderId} {
+      allow read, write: if true;
+    }
+    
+    // Users setup
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+    
+    // Contact / inquiries setup
+    match /contact_queries/{queryId} {
+      allow read, write: if true;
+    }
+  }
+}
